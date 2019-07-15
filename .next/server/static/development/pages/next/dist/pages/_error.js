@@ -1,7 +1,7 @@
 module.exports =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
-/******/ 	var installedModules = require('../../../ssr-module-cache.js');
+/******/ 	var installedModules = require('../../../../../../ssr-module-cache.js');
 /******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
@@ -88,96 +88,10 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
-
-/***/ "./components/Navbar/index.js":
-/*!************************************!*\
-  !*** ./components/Navbar/index.js ***!
-  \************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var next_Link__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! next/Link */ "next/Link");
-/* harmony import */ var next_Link__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_Link__WEBPACK_IMPORTED_MODULE_6__);
-
-
-
-
-
-
-
-
-var Navbar =
-/*#__PURE__*/
-function (_Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(Navbar, _Component);
-
-  function Navbar(props) {
-    var _this;
-
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Navbar);
-
-    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Navbar).call(this, props));
-    _this.props = props;
-    return _this;
-  }
-
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Navbar, [{
-    key: "render",
-    value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
-        className: "footer"
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(next_Link__WEBPACK_IMPORTED_MODULE_6___default.a, {
-        href: "/",
-        className: "likeButton"
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
-        className: "bottomicon1",
-        src: "https://image.flaticon.com/icons/svg/271/271218.svg"
-      })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(next_Link__WEBPACK_IMPORTED_MODULE_6___default.a, {
-        href: "/",
-        className: "likeButton"
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
-        className: "bottomicon1",
-        src: "https://image.flaticon.com/icons/svg/20/20176.svg"
-      })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(next_Link__WEBPACK_IMPORTED_MODULE_6___default.a, {
-        href: "/favourites",
-        className: "likeButton"
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
-        className: "bottomicon1",
-        src: "https://image.flaticon.com/icons/svg/60/60993.svg"
-      })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("style", null, "\n                .footer{\n                    display:flex;\n                    align-items:flex-end;\n                    padding:10px 10px;\n                    justify-content:space-between;\n                    background-color:#F57280;\n                    box-shadow:0 -2px 5px 0px #ddd;\n                  \n                  }\n\n                  .bottomicon1{\n                    opacity:1;\n                    width:20px;\n                  }\n\n                  .likeButton{\n                    text-align: right;\n                    border: none;\n                    background: transparent;\n                  } \n\n            "));
-    }
-  }]);
-
-  return Navbar;
-}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
-
-/* harmony default export */ __webpack_exports__["default"] = (Navbar);
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js":
-/*!***********************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js ***!
-  \***********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/json/stringify */ "core-js/library/fn/json/stringify");
-
-/***/ }),
 
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/object/create.js":
 /*!**********************************************************************!*\
@@ -456,213 +370,158 @@ function _typeof(obj) {
 
 /***/ }),
 
-/***/ "./pages/index.js":
-/*!************************!*\
-  !*** ./pages/index.js ***!
-  \************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/json/stringify */ "./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _components_Navbar__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/Navbar */ "./components/Navbar/index.js");
-
-
-
-
-
-
-
-
-
-
-var Index =
-/*#__PURE__*/
-function (_Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(Index, _Component);
-
-  function Index(props) {
-    var _this;
-
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__["default"])(this, Index);
-
-    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(Index).call(this, props));
-    _this.state = {
-      data: [{
-        id: 1,
-        userName: "appleInc",
-        userImage: "https://cdn3.iconfinder.com/data/icons/picons-social/57/56-apple-512.png",
-        coverImage: "https://www.att.com/catalog/en/idse/Apple/Apple%20Watch%20Series%204%20-%2040mm/Space%20Gray%20Aluminum%20-%20Black%20Sport%20Band-hero-zoom.png",
-        title: "Apple Watch 4",
-        price: 400,
-        description: "Space Black Stainless Steel Case with Black Sport Band",
-        likes: 300,
-        tags: "#Apple #AppleWatch #luxury #fitness",
-        comments: "ben"
-      }, {
-        id: 2,
-        userName: "microsoft",
-        userImage: "https://cdn3.iconfinder.com/data/icons/picons-social/57/57-windows-512.png",
-        coverImage: "https://c.s-microsoft.com/en-us/CMSImages/SurfaceHome_HL_ImagePanel_1_V4.png?version=64622b0d-b501-b3e0-08d1-1038b35a9e3c",
-        title: "Surface Pro 6",
-        price: 800,
-        description: "ben",
-        likes: 300,
-        tags: "#tag1 #tag2 #tag3 #tag4",
-        comments: "ben"
-      }]
-    };
-    return _this;
-  }
-
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__["default"])(Index, [{
-    key: "favourited",
-    value: function favourited(prop, userName, userImage, coverImage, title, price, description, likes, tags, comments) {
-      isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_7___default()('http://localhost:3000/favourites', {
-        method: 'POST',
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json'
-        },
-        body: _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default()({
-          userName: prop,
-          userImage: userName,
-          coverImage: coverImage,
-          title: title,
-          price: price,
-          description: description,
-          likes: likes,
-          tags: tags,
-          comments: comments
-        })
-      });
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this2 = this;
-
-      var dataList = this.state.data.map(function (data) {
-        return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-          className: "maindisplay"
-        }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-          className: "namedisplay"
-        }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-          className: "mainName"
-        }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("img", {
-          src: data.userImage,
-          width: "10%",
-          height: "10%",
-          className: "pfp"
-        }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("p", {
-          className: "username"
-        }, data.userName)), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("img", {
-          className: "icon3circ",
-          src: "https://image.flaticon.com/icons/svg/149/149947.svg"
-        })), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-          className: "subBody"
-        }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-          className: "imagepost"
-        }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("img", {
-          className: "actualimage",
-          src: data.coverImage
-        })), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-          className: "titlePrice"
-        }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-          className: "namedisplay"
-        }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-          className: "name"
-        }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("p", {
-          className: "title"
-        }, data.title)), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("button", {
-          onClick: function onClick() {
-            return _this2.favourited(data.id, data.userName, data.userImage, data.coverImage, data.title, data.price, data.description, data.likes, data.tags, data.comments);
-          }
-        }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("img", {
-          className: "icon3circ",
-          src: "https://image.flaticon.com/icons/svg/149/149947.svg"
-        }))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-          className: "priceContainer"
-        }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("span", {
-          className: "price"
-        }, "AED ", data.price)))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-          className: "sub2"
-        }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-          "class": "likescounter"
-        }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("img", {
-          className: "icon3circ",
-          src: "https://image.flaticon.com/icons/svg/60/60993.svg"
-        }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("p", {
-          "class": "likesdisplay"
-        }, data.likes, " Likes")), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-          className: "captioncounter"
-        }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("p", {
-          className: "captiondisplay"
-        }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("span", {
-          className: "bold"
-        }), data.description)), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-          className: "captioncounter"
-        }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("p", {
-          className: "captiondisplay"
-        }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("span", {
-          className: "bold"
-        }), data.tags)), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-          className: "commentcounter"
-        }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("p", {
-          className: "commentdisplay"
-        }, " View all 200 comments "))));
-      });
-      return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        className: "mainContainer"
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        className: "header"
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("img", {
-        className: "icon2",
-        src: "https://cdn.worldvectorlogo.com/logos/amazon-2.svg"
-      })), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        className: "phoneScreen"
-      }, dataList), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_Navbar__WEBPACK_IMPORTED_MODULE_8__["default"], null), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("style", null, "\n       \n             \n          \n       html{\n        height:100%;\n        width:100%;\n      }\n      \n      \n      @import url('https://fonts.googleapis.com/css?family=Roboto');\n      \n      *{\n        font-family: 'Roboto', sans-serif;\n      }\n\n      .mainContainer {\n        width: 400px;\n        background-color: white;\n        display: flex;\n        flex-direction: column;\n      }\n\n      .titlePrice{\n        padding-left: 0.5%;\n        color: white;\n      }\n      .phoneScreen{\n        height: 523px;\n        overflow: scroll;\n        overflow-x: hidden;\n        display: flex;\n        flex-direction:column;\n         \n      }\n      \n\n      .subBody{\n        background: black;\n      }\n      .icon1{\n        width:8%;\n      }\n      .icon2{\n        width:25%;\n        margin: auto;\n      }\n      .icon3{\n        width:8%;\n      }\n      .maindisplay{\n        border-bottom: 2px solid #a4a4a496;\n        display:flex;\n        flex-direction:column;\n        height:100%;\n        box-shadow: 0 2px 5px 0px #ddd;\n      }\n      .namedisplay{\n        display: flex;\n        align-items:center;\n        padding:0px 10px;\n        justify-content:space-between;\n      }\n      .name{\n        display: flex;\n        justify-content:flex-start;\n      }\n\n      .mainName{\n        display: flex;\n        justify-content:flex-start;\n        padding-top: 4px;\n      padding-bottom: 4px;\n      }\n      \n      \n      .pfp{\n        border-collapse: separate;\n        border-radius:50%;\n        width:10%;\n        height:10%;\n       \n      }\n      .username{\n        padding-left:5px;\n        font-weight:bold;\n        font-size:0.8em;\n      }\n      .title{\n        font-size: 1.0em;\n        \n        \n      }\n      .icon3circ{\n        width:5%;\n        \n      }\n      .imagepost{\n        text-align: center;\n        \n      }\n      .actualimage{\n        max-height: 300px;\n        \n      }\n      .likesrow{\n        display:flex;\n        flex-direction:row;\n        align-items:center;\n        padding: 5px 5px;\n      }\n      .icon5{\n        width:8%;\n        padding-right:5px;\n      }\n      .icon6{\n        width:8%;\n        padding-right:5px;\n      }\n      .icon7{\n        width:8%;\n      }\n      .icon8{\n        width: 22px;\n      }\n      .likescounter{\n        margin-top: -1%;\n        display: flex;\n        align-items:center;\n        padding-right:10px;\n      }\n      \n      .likesdisplay{\n        padding-top: 1%;\n        width: 100%;\n        font-size:1.0em;\n        margin-left:5px;\n        font-weight:bold;\n      }\n\n      .likeButton{\n        text-align: right;\n        border: none;\n        background: transparent;\n      } \n      \n      .bold{\n        font-weight:bold;\n      }\n      .priceContainer{\n        padding-bottom: 5px;\n        margin-top: -12px;\n        font-size: 0.7em;\n        margin-left: 10px;\n      }\n      \n      .price{\n        font-weight: bold;\n        font-size: 1.5em;\n      }\n      .captioncounter{\n        display:flex;\n        align-items:center;\n        padding-right:10px;\n        margin-top:-15px;\n      }\n      .captiondisplay{\n        font-size: 0.7em;\n        \n        \n      }\n      .sub2 {\n        margin-left:10px;\n      }\n      .commentcounter{\n        display:flex;\n        align-items:center;\n        padding-right:10px;\n        margin-top:-15px;\n      }\n      .commentdisplay{\n        font-size: 0.7em;\n        \n        color: grey;\n        \n      }\n\n      .header{\n        display:flex;\n        align-items:flex-start;\n        flex-direction: row;;\n        padding:10px 10px;\n        justify-content:space-between;\n        background-color: white;\n        box-shadow:0 2px 5px 0px #ddd;\n      }\n\n      .footer{\n        display:flex;\n        align-items:flex-end;\n        padding:10px 10px;\n        justify-content:space-between;\n        background-color:#F57280;\n        box-shadow:0 -2px 5px 0px #ddd;\n      \n      }\n      \n      .bottomicons{\n        opacity: 0.2;\n        width:8%;\n      }\n      .bottomicon1{\n        opacity:1;\n        width:20px;\n      }\n      \n      \n          \n          \n  "));
-    }
-  }]);
-
-  return Index;
-}(react__WEBPACK_IMPORTED_MODULE_6__["Component"]);
-
-/* harmony default export */ __webpack_exports__["default"] = (Index);
-
-/***/ }),
-
-/***/ 3:
-/*!******************************!*\
-  !*** multi ./pages/index.js ***!
-  \******************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! C:\Users\Extreme\Desktop\work\client\pages\index.js */"./pages/index.js");
-
-
-/***/ }),
-
-/***/ "core-js/library/fn/json/stringify":
-/*!****************************************************!*\
-  !*** external "core-js/library/fn/json/stringify" ***!
-  \****************************************************/
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js":
+/*!******************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js ***!
+  \******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("core-js/library/fn/json/stringify");
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : {
+    "default": obj
+  };
+}
+
+module.exports = _interopRequireDefault;
+
+/***/ }),
+
+/***/ "./node_modules/next/dist/pages/_error.js":
+/*!************************************************!*\
+  !*** ./node_modules/next/dist/pages/_error.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault2 = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+var _classCallCheck2 = _interopRequireDefault2(__webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js"));
+
+var _createClass2 = _interopRequireDefault2(__webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js"));
+
+var _possibleConstructorReturn2 = _interopRequireDefault2(__webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js"));
+
+var _getPrototypeOf2 = _interopRequireDefault2(__webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js"));
+
+var _inherits2 = _interopRequireDefault2(__webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js"));
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+exports.__esModule = true;
+exports["default"] = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+
+var _head = _interopRequireDefault(__webpack_require__(/*! next-server/head */ "next-server/head"));
+
+var statusCodes = {
+  400: 'Bad Request',
+  404: 'This page could not be found',
+  405: 'Method Not Allowed',
+  500: 'Internal Server Error'
+};
+/**
+* `Error` component used for handling errors.
+*/
+
+var Error =
+/*#__PURE__*/
+function (_react$default$Compon) {
+  (0, _inherits2["default"])(Error, _react$default$Compon);
+
+  function Error() {
+    (0, _classCallCheck2["default"])(this, Error);
+    return (0, _possibleConstructorReturn2["default"])(this, (0, _getPrototypeOf2["default"])(Error).apply(this, arguments));
+  }
+
+  (0, _createClass2["default"])(Error, [{
+    key: "render",
+    value: function render() {
+      var statusCode = this.props.statusCode;
+      var title = this.props.title || statusCodes[statusCode] || 'An unexpected error has occurred';
+      return _react["default"].createElement("div", {
+        style: styles.error
+      }, _react["default"].createElement(_head["default"], null, _react["default"].createElement("title", null, statusCode, ": ", title)), _react["default"].createElement("div", null, _react["default"].createElement("style", {
+        dangerouslySetInnerHTML: {
+          __html: 'body { margin: 0 }'
+        }
+      }), statusCode ? _react["default"].createElement("h1", {
+        style: styles.h1
+      }, statusCode) : null, _react["default"].createElement("div", {
+        style: styles.desc
+      }, _react["default"].createElement("h2", {
+        style: styles.h2
+      }, title, "."))));
+    }
+  }], [{
+    key: "getInitialProps",
+    value: function getInitialProps(_ref) {
+      var res = _ref.res,
+          err = _ref.err;
+      var statusCode = res && res.statusCode ? res.statusCode : err ? err.statusCode : 404;
+      return {
+        statusCode: statusCode
+      };
+    }
+  }]);
+  return Error;
+}(_react["default"].Component);
+
+exports["default"] = Error;
+Error.displayName = 'ErrorPage';
+var styles = {
+  error: {
+    color: '#000',
+    background: '#fff',
+    fontFamily: '-apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Fira Sans", Avenir, "Helvetica Neue", "Lucida Grande", sans-serif',
+    height: '100vh',
+    textAlign: 'center',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  desc: {
+    display: 'inline-block',
+    textAlign: 'left',
+    lineHeight: '49px',
+    height: '49px',
+    verticalAlign: 'middle'
+  },
+  h1: {
+    display: 'inline-block',
+    borderRight: '1px solid rgba(0, 0, 0,.3)',
+    margin: 0,
+    marginRight: '20px',
+    padding: '10px 23px 10px 0',
+    fontSize: '24px',
+    fontWeight: 500,
+    verticalAlign: 'top'
+  },
+  h2: {
+    fontSize: '14px',
+    fontWeight: 'normal',
+    lineHeight: 'inherit',
+    margin: 0,
+    padding: 0
+  }
+};
+
+/***/ }),
+
+/***/ 4:
+/*!******************************************************!*\
+  !*** multi ./node_modules/next/dist/pages/_error.js ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! C:\Users\Extreme\Desktop\work\client\node_modules\next\dist\pages\_error.js */"./node_modules/next/dist/pages/_error.js");
+
 
 /***/ }),
 
@@ -732,25 +591,14 @@ module.exports = require("core-js/library/fn/symbol/iterator");
 
 /***/ }),
 
-/***/ "isomorphic-unfetch":
-/*!*************************************!*\
-  !*** external "isomorphic-unfetch" ***!
-  \*************************************/
+/***/ "next-server/head":
+/*!***********************************!*\
+  !*** external "next-server/head" ***!
+  \***********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("isomorphic-unfetch");
-
-/***/ }),
-
-/***/ "next/Link":
-/*!****************************!*\
-  !*** external "next/Link" ***!
-  \****************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("next/Link");
+module.exports = require("next-server/head");
 
 /***/ }),
 
@@ -766,4 +614,4 @@ module.exports = require("react");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=_error.js.map

@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import Fetch from 'isomorphic-unfetch';
-import Favourite from './favourites'
-import Link from 'next/Link'
+
+
 import Navbar from '../components/Navbar'
-import Head from 'next/head'
+
 
 
 class Index extends Component{

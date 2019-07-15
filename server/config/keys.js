@@ -1,3 +1,6 @@
 module.exports = {
-    mongoURI: 'mongodb://localhost:27017/favDB'
+    
+    mongoURI:'mongodb+srv://reaper:eroC@letnI5@main-8bera.mongodb.net/test?retryWrites=true&w=majority'
+
+    
 }
