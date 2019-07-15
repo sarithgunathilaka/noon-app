@@ -37,7 +37,7 @@ class Favourites extends Component {
 
         return (
             <div className="container">
-            <Navbar/>
+            
             <h2>Members</h2>
             <p>Total Favourites: {favList.length}</p>
             
