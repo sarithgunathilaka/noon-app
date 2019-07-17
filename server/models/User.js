@@ -1,9 +1,13 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-//const bcrypt = require('bcryptjs');
 
 // Create Schema
 const FavSchema = new Schema({
+  id: {
+    type: Number,
+    required: true
+  },
+
   userName: {
     type: String,
     required: true
@@ -35,14 +39,8 @@ const FavSchema = new Schema({
   tags: {
     type: String,
     required: true
-  },
-  comments: {
-    type: String,
-    required: true
-  },
+  }
+  
 });
-
-
-
 
 module.exports = Fav = mongoose.model('favourite', FavSchema);

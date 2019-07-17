@@ -21,17 +21,35 @@ app
     .prepare()
     .then(() => {
         const server = express();
-
         server.use('/api', api)
 
-        
         //Bodyparser
         server.use(bodyParser.urlencoded({ extended: false }))
         server.use(bodyParser.json());
 
-        server.post('/favourites', (req, res, next) => {
+        // @route   POST api/delete
+        // @desc    Delete favourite
+        // @access  Private  
+        server.post('/delete', (req,res) => {
+          const { body } = req;
+          const id = body;
+          
+          Fav.deleteOne(id, function(err) {
+            
+            return res.status(202).send(id)
+            
+           
+          })
+          
+        })
+
+        // @route   POST api/favourites
+        // @desc    Create favourite
+        // @access  Private 
+        server.post('/favourites', (req, res) => {
             const { body } = req;
             const {
+                userId,
                 userName,
                 userImage,
                 coverImage,
@@ -39,12 +57,26 @@ app
                 price,
                 description,
                 likes,
-                tags,
-                comments
+                tags
+                
             } = body;
+
+
+            Fav.find({
+                id: userId
+              }, (err, previousPost) => {
+                if (err) {
+                  return res.send('Error: Server error');
+                } else if (previousPost.length > 0) {
+                  return res.send('Error: Account already exist');
+                  
+                }
+              })  
         
             
         const newFav = new Fav();
+        
+              newFav.id = userId;
               newFav.userName = userName;
               newFav.userImage = userImage;
               newFav.coverImage = coverImage;
@@ -53,17 +85,18 @@ app
               newFav.description = description;
               newFav.likes = likes;
               newFav.tags = tags;
-              newFav.comments = comments;
+              
+              
               
               
               newFav.save((err, user) => {
-              res.send({
+              return res.send({
                 success: true,
-                message: 'Account created'
+                message: 'Account created', user
+                
               })
             })
         });
-
 
         server.get("*", (req, res) => {
             return handle(req,res);
@@ -82,9 +115,6 @@ app
         .catch(err => console.log(err))
 
         
-
-        
-
         .catch(ex => {
             console.error(ex.stack);
             process.exit(1);
