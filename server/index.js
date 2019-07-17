@@ -49,7 +49,7 @@ app
         server.post('/favourites', (req, res) => {
             const { body } = req;
             const {
-                userId,
+                id,
                 userName,
                 userImage,
                 coverImage,
@@ -63,7 +63,7 @@ app
 
 
             Fav.find({
-                id: userId
+                id: id
               }, (err, previousPost) => {
                 if (err) {
                   return res.send('Error: Server error');
@@ -76,7 +76,7 @@ app
             
         const newFav = new Fav();
         
-              newFav.id = userId;
+              newFav.id = id;
               newFav.userName = userName;
               newFav.userImage = userImage;
               newFav.coverImage = coverImage;
