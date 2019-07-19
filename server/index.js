@@ -49,7 +49,7 @@ app
         server.post('/favourites', (req, res) => {
             const { body } = req;
             const {
-                userId,
+                id,
                 userName,
                 userImage,
                 coverImage,
@@ -62,21 +62,21 @@ app
             } = body;
 
 
-            Fav.find({
-                id: userId
-              }, (err, previousPost) => {
-                if (err) {
-                  return res.send('Error: Server error');
-                } else if (previousPost.length > 0) {
-                  return res.send('Error: Account already exist');
+            // Fav.find({
+            //     id: id
+            //   }, (err, previousPost) => {
+            //     if (err) {
+            //       return res.send('Error: Server error');
+            //     } else if (previousPost.length > 0) {
+            //       return res.send('Error: Account already exist');
                   
-                }
-              })  
+            //     }
+            //   })  
         
             
         const newFav = new Fav();
         
-              newFav.id = userId;
+              newFav.id = id;
               newFav.userName = userName;
               newFav.userImage = userImage;
               newFav.coverImage = coverImage;

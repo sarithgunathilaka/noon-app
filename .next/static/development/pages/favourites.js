@@ -1,5 +1,122 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\favourites.js"],{
 
+/***/ "./components/Layout/mainLayout.js":
+/*!*****************************************!*\
+  !*** ./components/Layout/mainLayout.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Navbar_index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Navbar/index */ "./components/Navbar/index.js");
+
+
+
+var main = function main(props) {
+  if (props.load) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "loading...");
+  }
+
+  if (props.data.length == 0) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "mainContainer"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "header"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      className: "icon2",
+      src: "https://cdn.worldvectorlogo.com/logos/amazon-2.svg"
+    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "phoneScreen"
+    }, "No Posts Found!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Navbar_index__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", null, "\n                    \n                    html{\n                      height:100%;\n                      width:100%;\n                    }\n                    \n                    @import url('https://fonts.googleapis.com/css?family=Roboto');\n                    \n                    *{\n                      font-family: 'Roboto', sans-serif;\n                    }\n    \n                    .mainContainer {\n                      width: 400px;\n                      background-color: white;\n                      display: flex;\n                      flex-direction: column;\n                    }\n    \n                    .titlePrice{\n                      padding-left: 0.5%;\n                      color: white;\n                    }\n                    .phoneScreen{\n                      height: 523px;\n                      overflow: scroll;\n                      overflow-x: hidden;\n                      display: flex;\n                      flex-direction:column;\n                      \n                    }\n                    \n                    .subBody{\n                      background: black;\n                    }\n                    .icon1{\n                      width:8%;\n                    }\n                    .icon2{\n                      width:25%;\n                      margin: auto;\n                    }\n                    .icon3{\n                      width:8%;\n                    }\n                    .maindisplay{\n                      border-bottom: 2px solid #a4a4a496;\n                      display:flex;\n                      flex-direction:column;\n                      height:100%;\n                      box-shadow: 0 2px 5px 0px #ddd;\n                    }\n                    .namedisplay{\n                      display: flex;\n                      align-items:center;\n                      padding:0px 10px;\n                      justify-content:space-between;\n                    }\n                    .name{\n                      display: flex;\n                      justify-content:flex-start;\n                    }\n    \n                    .mainName{\n                      display: flex;\n                      justify-content:flex-start;\n                      padding-top: 4px;\n                    padding-bottom: 4px;\n                    }\n                    \n                    \n                    .pfp{\n                      border-collapse: separate;\n                      border-radius:50%;\n                      width:10%;\n                      height:10%;\n                    \n                    }\n                    .username{\n                      padding-left:5px;\n                      font-weight:bold;\n                      font-size:0.8em;\n                    }\n                    .title{\n                      font-size: 1.0em;\n                      \n                      \n                    }\n                    .icon3circ{\n                      width:5%;\n                      \n                    }\n                    .imagepost{\n                      text-align: center;\n                      \n                    }\n                    .actualimage{\n                      max-height: 300px;\n                      \n                    }\n                    .likesrow{\n                      display:flex;\n                      flex-direction:row;\n                      align-items:center;\n                      padding: 5px 5px;\n                    }\n                    .icon5{\n                      width:8%;\n                      padding-right:5px;\n                    }\n                    .icon6{\n                      width:8%;\n                      padding-right:5px;\n                    }\n                    .icon7{\n                      width:8%;\n                    }\n                    .icon8{\n                      width: 22px;\n                    }\n                    .likescounter{\n                      margin-top: -1%;\n                      display: flex;\n                      align-items:center;\n                      padding-right:10px;\n                    }\n                    \n                    .likesdisplay{\n                      padding-top: 1%;\n                      width: 100%;\n                      font-size:1.0em;\n                      margin-left:5px;\n                      font-weight:bold;\n                    }\n    \n                    .likeButton{\n                      text-align: right;\n                      border: none;\n                      background: transparent;\n                    } \n                    \n                    .bold{\n                      font-weight:bold;\n                    }\n                    .priceContainer{\n                      padding-bottom: 5px;\n                      margin-top: -12px;\n                      font-size: 0.7em;\n                      margin-left: 10px;\n                    }\n                    \n                    .price{\n                      font-weight: bold;\n                      font-size: 1.5em;\n                    }\n                    .captioncounter{\n                      display:flex;\n                      align-items:center;\n                      padding-right:10px;\n                      margin-top:-15px;\n                    }\n                    .captiondisplay{\n                      font-size: 0.7em;\n                    }\n                    .sub2 {\n                      margin-left:10px;\n                    }\n                    .commentcounter{\n                      display:flex;\n                      align-items:center;\n                      padding-right:10px;\n                      margin-top:-15px;\n                    }\n                    .commentdisplay{\n                      font-size: 0.7em;\n                      color: grey;\n                    }\n    \n                    .header{\n                      display:flex;\n                      align-items:flex-start;\n                      flex-direction: row;;\n                      padding:10px 10px;\n                      justify-content:space-between;\n                      background-color: #eaeaea;\n                      box-shadow:0 2px 5px 0px #ddd;\n                    }\n    \n                    .footer{\n                      display:flex;\n                      align-items:flex-end;\n                      padding:10px 10px;\n                      justify-content:space-between;\n                      background-color: #eaeaea;\n                      box-shadow:0 -2px 5px 0px #ddd;\n                    \n                    }\n                    \n                    .bottomicons{\n                      opacity: 0.2;\n                      width:8%;\n                    }\n                    .bottomicon1{\n                      opacity:1;\n                      width:20px;\n                    }\n      \n      \n          \n          \n    "));
+  }
+
+  var dataList = props.data.map(function (test) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      key: test.id,
+      className: "maindisplay"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "namedisplay"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "mainName"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      src: test.userImage,
+      width: "10%",
+      height: "10%",
+      className: "pfp"
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      className: "username"
+    }, test.userName)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      className: "icon3circ",
+      src: "https://image.flaticon.com/icons/svg/149/149947.svg"
+    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "subBody"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "imagepost"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      className: "actualimage",
+      src: test.coverImage
+    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "titlePrice"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "namedisplay"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "name"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      className: "title"
+    }, test.title)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      onClick: function onClick() {
+        return props.button(test.id, test.userName, test.userImage, test.coverImage, test.title, test.price, test.description, test.likes, test.tags);
+      }
+    }, props.butStatus)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "priceContainer"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      className: "price"
+    }, "AED ", test.price)))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "sub2"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "likescounter"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      className: "icon3circ",
+      src: "https://image.flaticon.com/icons/svg/60/60993.svg"
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      className: "likesdisplay"
+    }, test.likes, " Likes")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "captioncounter"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      className: "captiondisplay"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      className: "bold"
+    }), test.description)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "captioncounter"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      className: "captiondisplay"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      className: "bold"
+    }), test.tags)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "commentcounter"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      className: "commentdisplay"
+    }, " View all 200 comments "))));
+  });
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "mainContainer"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "header"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "icon2",
+    src: "https://cdn.worldvectorlogo.com/logos/amazon-2.svg"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "phoneScreen"
+  }, dataList), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Navbar_index__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", null, "\n                \n                html{\n                  height:100%;\n                  width:100%;\n                }\n                \n                @import url('https://fonts.googleapis.com/css?family=Roboto');\n                \n                *{\n                  font-family: 'Roboto', sans-serif;\n                }\n\n                .mainContainer {\n                  width: 400px;\n                  background-color: white;\n                  display: flex;\n                  flex-direction: column;\n                }\n\n                .titlePrice{\n                  padding-left: 0.5%;\n                  color: white;\n                }\n                .phoneScreen{\n                  height: 523px;\n                  overflow: scroll;\n                  overflow-x: hidden;\n                  display: flex;\n                  flex-direction:column;\n                  \n                }\n                \n                .subBody{\n                  background: black;\n                }\n                .icon1{\n                  width:8%;\n                }\n                .icon2{\n                  width:25%;\n                  margin: auto;\n                }\n                .icon3{\n                  width:8%;\n                }\n                .maindisplay{\n                  border-bottom: 2px solid #a4a4a496;\n                  display:flex;\n                  flex-direction:column;\n                  height:100%;\n                  box-shadow: 0 2px 5px 0px #ddd;\n                }\n                .namedisplay{\n                  display: flex;\n                  align-items:center;\n                  padding:0px 10px;\n                  justify-content:space-between;\n                }\n                .name{\n                  display: flex;\n                  justify-content:flex-start;\n                }\n\n                .mainName{\n                  display: flex;\n                  justify-content:flex-start;\n                  padding-top: 4px;\n                padding-bottom: 4px;\n                }\n                \n                \n                .pfp{\n                  border-collapse: separate;\n                  border-radius:50%;\n                  width:10%;\n                  height:10%;\n                \n                }\n                .username{\n                  padding-left:5px;\n                  font-weight:bold;\n                  font-size:0.8em;\n                }\n                .title{\n                  font-size: 1.0em;\n                  \n                  \n                }\n                .icon3circ{\n                  width:5%;\n                  \n                }\n                .imagepost{\n                  text-align: center;\n                  \n                }\n                .actualimage{\n                  max-height: 300px;\n                  \n                }\n                .likesrow{\n                  display:flex;\n                  flex-direction:row;\n                  align-items:center;\n                  padding: 5px 5px;\n                }\n                .icon5{\n                  width:8%;\n                  padding-right:5px;\n                }\n                .icon6{\n                  width:8%;\n                  padding-right:5px;\n                }\n                .icon7{\n                  width:8%;\n                }\n                .icon8{\n                  width: 22px;\n                }\n                .likescounter{\n                  margin-top: -1%;\n                  display: flex;\n                  align-items:center;\n                  padding-right:10px;\n                }\n                \n                .likesdisplay{\n                  padding-top: 1%;\n                  width: 100%;\n                  font-size:1.0em;\n                  margin-left:5px;\n                  font-weight:bold;\n                }\n\n                .likeButton{\n                  text-align: right;\n                  border: none;\n                  background: transparent;\n                } \n                \n                .bold{\n                  font-weight:bold;\n                }\n                .priceContainer{\n                  padding-bottom: 5px;\n                  margin-top: -12px;\n                  font-size: 0.7em;\n                  margin-left: 10px;\n                }\n                \n                .price{\n                  font-weight: bold;\n                  font-size: 1.5em;\n                }\n                .captioncounter{\n                  display:flex;\n                  align-items:center;\n                  padding-right:10px;\n                  margin-top:-15px;\n                }\n                .captiondisplay{\n                  font-size: 0.7em;\n                }\n                .sub2 {\n                  margin-left:10px;\n                }\n                .commentcounter{\n                  display:flex;\n                  align-items:center;\n                  padding-right:10px;\n                  margin-top:-15px;\n                }\n                .commentdisplay{\n                  font-size: 0.7em;\n                  color: grey;\n                }\n\n                .header{\n                  display:flex;\n                  align-items:flex-start;\n                  flex-direction: row;;\n                  padding:10px 10px;\n                  justify-content:space-between;\n                  background-color: #eaeaea;\n                  box-shadow:0 2px 5px 0px #ddd;\n                }\n\n                .footer{\n                  display:flex;\n                  align-items:flex-end;\n                  padding:10px 10px;\n                  justify-content:space-between;\n                  background-color: #eaeaea;\n                  box-shadow:0 -2px 5px 0px #ddd;\n                \n                }\n                \n                .bottomicons{\n                  opacity: 0.2;\n                  width:8%;\n                }\n                .bottomicon1{\n                  opacity:1;\n                  width:20px;\n                }\n  \n  \n      \n      \n"));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (main);
+
+/***/ }),
+
 /***/ "./components/Navbar/index.js":
 /*!************************************!*\
   !*** ./components/Navbar/index.js ***!
@@ -10097,6 +10214,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_9__);
 /* harmony import */ var _components_Navbar__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/Navbar */ "./components/Navbar/index.js");
+/* harmony import */ var _components_Layout_mainLayout__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/Layout/mainLayout */ "./components/Layout/mainLayout.js");
+
 
 
 
@@ -10186,102 +10305,12 @@ function (_Component) {
   }, {
     key: "render",
     value: function render() {
-      var _this2 = this;
-
-      if (this.state.loading) {
-        return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", null, "loading...");
-      }
-
-      if (this.state.favs.length == 0) {
-        return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-          className: "mainContainer"
-        }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-          className: "header"
-        }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("img", {
-          className: "icon2",
-          src: "https://cdn.worldvectorlogo.com/logos/amazon-2.svg"
-        })), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-          className: "phoneScreen"
-        }, "No Favourites!"), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_Navbar__WEBPACK_IMPORTED_MODULE_10__["default"], null), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("style", null, "\n                        html{\n                          height:100%;\n                          width:100%;\n                        }\n                        \n                        @import url('https://fonts.googleapis.com/css?family=Roboto');\n                        \n                        *{\n                          font-family: 'Roboto', sans-serif;\n                        }\n                  \n                        .mainContainer {\n                          width: 400px;\n                          background-color: white;\n                          display: flex;\n                          flex-direction: column;\n                        }\n                  \n                        .titlePrice{\n                          padding-left: 0.5%;\n                          color: white;\n                        }\n                        .phoneScreen{\n                          height: 523px;\n                          overflow: scroll;\n                          overflow-x: hidden;\n                          display: flex;\n                          flex-direction:column;\n                          \n                        }\n                       \n                        .subBody{\n                          background: black;\n                        }\n                        .icon1{\n                          width:8%;\n                        }\n                        .icon2{\n                          width:25%;\n                          margin: auto;\n                        }\n                        .icon3{\n                          width:8%;\n                        }\n                        .maindisplay{\n                          border-bottom: 2px solid #a4a4a496;\n                          display:flex;\n                          flex-direction:column;\n                          height:100%;\n                          box-shadow: 0 2px 5px 0px #ddd;\n                        }\n                        .namedisplay{\n                          display: flex;\n                          align-items:center;\n                          padding:0px 10px;\n                          justify-content:space-between;\n                        }\n                        .name{\n                          display: flex;\n                          justify-content:flex-start;\n                        }\n                        .mainName{\n                          display: flex;\n                          justify-content:flex-start;\n                          padding-top: 4px;\n                        padding-bottom: 4px;\n                        }\n                        .pfp{\n                          border-collapse: separate;\n                          border-radius:50%;\n                          width:10%;\n                          height:10%;\n                        \n                        }\n                        .username{\n                          padding-left:5px;\n                          font-weight:bold;\n                          font-size:0.8em;\n                        }\n                        .title{\n                          font-size: 1.0em;\n                        }\n                        .icon3circ{\n                          width:5%;\n                        }\n                        .imagepost{\n                          text-align: center;\n                        }\n                        .actualimage{\n                          max-height: 300px;\n                        }\n                        .likesrow{\n                          display:flex;\n                          flex-direction:row;\n                          align-items:center;\n                          padding: 5px 5px;\n                        }\n                        .icon5{\n                          width:8%;\n                          padding-right:5px;\n                        }\n                        .icon6{\n                          width:8%;\n                          padding-right:5px;\n                        }\n                        .icon7{\n                          width:8%;\n                        }\n                        .icon8{\n                          width: 22px;\n                        }\n                        .likescounter{\n                          margin-top: -1%;\n                          display: flex;\n                          align-items:center;\n                          padding-right:10px;\n                        }\n                        \n                        .likesdisplay{\n                          padding-top: 1%;\n                          width: 100%;\n                          font-size:1.0em;\n                          margin-left:5px;\n                          font-weight:bold;\n                        }\n                  \n                        .likeButton{\n                          text-align: right;\n                          border: none;\n                          background: transparent;\n                        } \n                        \n                        .bold{\n                          font-weight:bold;\n                        }\n                        .priceContainer{\n                          padding-bottom: 5px;\n                          margin-top: -12px;\n                          font-size: 0.7em;\n                          margin-left: 10px;\n                        }\n                        \n                        .price{\n                          font-weight: bold;\n                          font-size: 1.5em;\n                        }\n                        .captioncounter{\n                          display:flex;\n                          align-items:center;\n                          padding-right:10px;\n                          margin-top:-15px;\n                        }\n                        .captiondisplay{\n                          font-size: 0.7em;\n                        }\n                        .sub2 {\n                          margin-left:10px;\n                        }\n                        .commentcounter{\n                          display:flex;\n                          align-items:center;\n                          padding-right:10px;\n                          margin-top:-15px;\n                        }\n                        .commentdisplay{\n                          font-size: 0.7em;\n                          \n                          color: grey;\n                        }\n                  \n                        .header{\n                          display:flex;\n                          align-items:flex-start;\n                          flex-direction: row;;\n                          padding:10px 10px;\n                          justify-content:space-between;\n                          background-color: #eaeaea;\n                          box-shadow:0 2px 5px 0px #ddd;\n                        }\n                  \n                        .footer{\n                          display:flex;\n                          align-items:flex-end;\n                          padding:10px 10px;\n                          justify-content:space-between;\n                          background-color: #eaeaea;\n                          box-shadow:0 -2px 5px 0px #ddd;\n                        \n                        }\n                        \n                        .bottomicons{\n                          opacity: 0.2;\n                          width:8%;\n                        }\n                        .bottomicon1{\n                          opacity:1;\n                          width:20px;\n                        }\n                    "));
-      }
-
-      var favList = this.state.favs.map(function (fav) {
-        return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-          className: "maindisplay"
-        }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-          className: "namedisplay"
-        }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-          className: "mainName"
-        }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("img", {
-          src: fav.userImage,
-          width: "10%",
-          height: "10%",
-          className: "pfp"
-        }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("p", {
-          className: "username"
-        }, fav.userName)), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("img", {
-          className: "icon3circ",
-          src: "https://image.flaticon.com/icons/svg/149/149947.svg"
-        })), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-          className: "subBody"
-        }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-          className: "imagepost"
-        }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("img", {
-          className: "actualimage",
-          src: fav.coverImage
-        })), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-          className: "titlePrice"
-        }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-          className: "namedisplay"
-        }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-          className: "name"
-        }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("p", {
-          className: "title"
-        }, fav.title)), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("button", {
-          onClick: function onClick() {
-            return _this2.removeFav(fav.id);
-          }
-        }, "Remove")), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-          className: "priceContainer"
-        }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("span", {
-          className: "price"
-        }, "AED ", fav.price)))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-          className: "sub2"
-        }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-          className: "likescounter"
-        }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("img", {
-          className: "icon3circ",
-          src: "https://image.flaticon.com/icons/svg/60/60993.svg"
-        }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("p", {
-          className: "likesdisplay"
-        }, fav.likes, " Likes")), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-          className: "captioncounter"
-        }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("p", {
-          className: "captiondisplay"
-        }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("span", {
-          className: "bold"
-        }), fav.description)), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-          className: "captioncounter"
-        }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("p", {
-          className: "captiondisplay"
-        }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("span", {
-          className: "bold"
-        }), fav.tags)), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-          className: "commentcounter"
-        }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("p", {
-          className: "commentdisplay"
-        }, " View all 200 comments "))));
-      });
-      return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "mainContainer"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "header"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("img", {
-        className: "icon2",
-        src: "https://cdn.worldvectorlogo.com/logos/amazon-2.svg"
-      })), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "phoneScreen"
-      }, favList), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_Navbar__WEBPACK_IMPORTED_MODULE_10__["default"], null), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("style", null, "\n       \n             \n          \n       html{\n        height:100%;\n        width:100%;\n      }\n      \n      \n      @import url('https://fonts.googleapis.com/css?family=Roboto');\n      \n      *{\n        font-family: 'Roboto', sans-serif;\n      }\n\n      .mainContainer {\n        width: 400px;\n        background-color: white;\n        display: flex;\n        flex-direction: column;\n      }\n\n      .titlePrice{\n        padding-left: 0.5%;\n        color: white;\n      }\n      .phoneScreen{\n        height: 523px;\n        overflow: scroll;\n        overflow-x: hidden;\n        display: flex;\n        flex-direction:column;\n         \n      }\n      \n\n      .subBody{\n        background: black;\n      }\n      .icon1{\n        width:8%;\n      }\n      .icon2{\n        width:25%;\n        margin: auto;\n      }\n      .icon3{\n        width:8%;\n      }\n      .maindisplay{\n        border-bottom: 2px solid #a4a4a496;\n        display:flex;\n        flex-direction:column;\n        height:100%;\n        box-shadow: 0 2px 5px 0px #ddd;\n      }\n      .namedisplay{\n        display: flex;\n        align-items:center;\n        padding:0px 10px;\n        justify-content:space-between;\n      }\n      .name{\n        display: flex;\n        justify-content:flex-start;\n      }\n\n      .mainName{\n        display: flex;\n        justify-content:flex-start;\n        padding-top: 4px;\n      padding-bottom: 4px;\n      }\n      \n      \n      .pfp{\n        border-collapse: separate;\n        border-radius:50%;\n        width:10%;\n        height:10%;\n       \n      }\n      .username{\n        padding-left:5px;\n        font-weight:bold;\n        font-size:0.8em;\n      }\n      .title{\n        font-size: 1.0em;\n        \n        \n      }\n      .icon3circ{\n        width:5%;\n        \n      }\n      .imagepost{\n        text-align: center;\n        \n      }\n      .actualimage{\n        max-height: 300px;\n        \n      }\n      .likesrow{\n        display:flex;\n        flex-direction:row;\n        align-items:center;\n        padding: 5px 5px;\n      }\n      .icon5{\n        width:8%;\n        padding-right:5px;\n      }\n      .icon6{\n        width:8%;\n        padding-right:5px;\n      }\n      .icon7{\n        width:8%;\n      }\n      .icon8{\n        width: 22px;\n      }\n      .likescounter{\n        margin-top: -1%;\n        display: flex;\n        align-items:center;\n        padding-right:10px;\n      }\n      \n      .likesdisplay{\n        padding-top: 1%;\n        width: 100%;\n        font-size:1.0em;\n        margin-left:5px;\n        font-weight:bold;\n      }\n\n      .likeButton{\n        text-align: right;\n        border: none;\n        background: transparent;\n      } \n      \n      .bold{\n        font-weight:bold;\n      }\n      .priceContainer{\n        padding-bottom: 5px;\n        margin-top: -12px;\n        font-size: 0.7em;\n        margin-left: 10px;\n      }\n      \n      .price{\n        font-weight: bold;\n        font-size: 1.5em;\n      }\n      .captioncounter{\n        display:flex;\n        align-items:center;\n        padding-right:10px;\n        margin-top:-15px;\n      }\n      .captiondisplay{\n        font-size: 0.7em;\n        \n        \n      }\n      .sub2 {\n        margin-left:10px;\n      }\n      .commentcounter{\n        display:flex;\n        align-items:center;\n        padding-right:10px;\n        margin-top:-15px;\n      }\n      .commentdisplay{\n        font-size: 0.7em;\n        \n        color: grey;\n        \n      }\n\n      .header{\n        display:flex;\n        align-items:flex-start;\n        flex-direction: row;;\n        padding:10px 10px;\n        justify-content:space-between;\n        background-color: #eaeaea;\n        box-shadow:0 2px 5px 0px #ddd;\n      }\n\n      .footer{\n        display:flex;\n        align-items:flex-end;\n        padding:10px 10px;\n        justify-content:space-between;\n        background-color: #eaeaea;\n        box-shadow:0 -2px 5px 0px #ddd;\n      \n      }\n      \n      .bottomicons{\n        opacity: 0.2;\n        width:8%;\n      }\n      .bottomicon1{\n        opacity:1;\n        width:20px;\n      }\n      \n      \n          \n          \n  "));
+      return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_Layout_mainLayout__WEBPACK_IMPORTED_MODULE_11__["default"], {
+        data: this.state.favs,
+        button: this.removeFav,
+        load: this.state.loading,
+        butStatus: "Dislike"
+      }));
     }
   }]);
 
@@ -10292,7 +10321,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 0:
+/***/ 2:
 /*!***************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Ffavourites&absolutePagePath=C%3A%5CUsers%5CExtreme%5CDesktop%5Cwork%5Cclient%5Cpages%5Cfavourites.js ***!
   \***************************************************************************************************************************************************/
@@ -10315,5 +10344,5 @@ module.exports = dll_829b10deddf10e1653a8;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=favourites.js.map
