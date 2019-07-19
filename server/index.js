@@ -104,7 +104,7 @@ app
 
         server.listen(PORT, err => {
             if (err) throw err,
-            console.log(`> Ready on ${PORT}`);
+            console.log(`Ready on ${PORT}`);
         })
 
        

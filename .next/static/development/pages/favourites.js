@@ -10321,7 +10321,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!***************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Ffavourites&absolutePagePath=C%3A%5CUsers%5CExtreme%5CDesktop%5Cwork%5Cclient%5Cpages%5Cfavourites.js ***!
   \***************************************************************************************************************************************************/
@@ -10344,5 +10344,5 @@ module.exports = dll_829b10deddf10e1653a8;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=favourites.js.map
